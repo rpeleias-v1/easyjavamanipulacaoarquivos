@@ -26,15 +26,9 @@ public abstract class LeitorDados {
 			apontadorHoras.setHorarioSaidaAlmoco(horarioSaidaAlmoco);
 			apontadorHoras.setHorarioVoltaAlmoco(horarioVoltaAlmoco);
 			apontadorHoras.setHorarioSaida(horarioSaida);
-		} catch (NumberFormatException e) {
+		} catch (NumberFormatException | ParseException | IOException e) {
 			System.out.println("Entrada de horários inválida!");
-		} catch (ParseException e) {
-			System.out.println("Entrada de data inválida!");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} 
-		
 		return apontadorHoras;
 	}
 	

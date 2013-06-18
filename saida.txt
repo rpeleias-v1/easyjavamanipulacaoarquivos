@@ -1,0 +1,6 @@
+
+Entrada: 9.0
+Saída para Almoço = 12.0
+Volta do Almoço = 13.0
+Horário de Saída = 19.0
+Horário de Trabalho Total = Wed Mar 23 00:00:00 BRT 1988

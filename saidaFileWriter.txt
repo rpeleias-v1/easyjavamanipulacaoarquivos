@@ -1,0 +1,6 @@
+
+Entrada: 9.0
+SaÃ­da para AlmoÃ§o = 12.0
+Volta do AlmoÃ§o = 13.0
+HorÃ¡rio de SaÃ­da = 19.0
+HorÃ¡rio de Trabalho Total = Wed Mar 23 00:00:00 BRT 1988

@@ -9,9 +9,9 @@ public class PontoHorarioTrabalho {
 	}
 	
 	public String listar() {
-		return "\nEntrada: " + apontadorHoras.getHorarioEntrada() + "\nSaída para Almoço = " + apontadorHoras.getHorarioSaidaAlmoco() + 
+		return "Data do ponto gerado = " + apontadorHoras.getData().toString() + "\nEntrada: " + apontadorHoras.getHorarioEntrada() + "\nSaída para Almoço = " + apontadorHoras.getHorarioSaidaAlmoco() + 
 				"\nVolta do Almoço = " + apontadorHoras.getHorarioVoltaAlmoco() + "\nHorário de Saída = " + apontadorHoras.getHorarioSaida() + 
-				"\nHorário de Trabalho Total = " + apontadorHoras.getData();
+				"\nHorário de Trabalho Total = " + apontadorHoras.calcularHorarioDiario();
 	}
 
 	public ApontadorHoras getApontadorHoras() {

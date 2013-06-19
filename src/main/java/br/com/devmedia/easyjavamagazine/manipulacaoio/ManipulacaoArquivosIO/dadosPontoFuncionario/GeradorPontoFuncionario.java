@@ -10,6 +10,10 @@ public class GeradorPontoFuncionario {
 	
 	public void gerarRelatorioDiario(LeitorDados leitorDados, GeradorRelatorio geradorRelatorio) {
 		ApontadorHoras apontadorHoras = leitorDados.realizarLeituraDados();
+		if (!apontadorHoras.horarioDeTrabalhoValido()) {
+			System.out.println("Horário de trabalho Inválido!");
+			System.exit(0);
+		}
 		PontoHorarioTrabalho pontoHorarioTrabalho = new PontoHorarioTrabalho(apontadorHoras);
 		geradorRelatorio.gerar(pontoHorarioTrabalho.listar());
 	}

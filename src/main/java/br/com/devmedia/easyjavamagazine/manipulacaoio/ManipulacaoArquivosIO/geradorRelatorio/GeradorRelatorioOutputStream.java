@@ -12,7 +12,7 @@ public class GeradorRelatorioOutputStream extends GeradorRelatorio{
 	@Override
 	protected void gerarArquivoSaida(String dadosRelatorioTrabalho) throws IOException {
 		InputStream in = new  ByteArrayInputStream(dadosRelatorioTrabalho.getBytes());
-		OutputStream out = new FileOutputStream("saida.txt");
+		OutputStream out = new FileOutputStream("relatorioOutputStream.txt");
 		int dado;
 		while ((dado = in.read()) != -1) {
             out.write(dado);
